@@ -1,0 +1,2173 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Datastore | @lumino/datastore</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@lumino/datastore</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="datastore.html">Datastore</a>
+				</li>
+			</ul>
+			<h1>Class Datastore</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A multi-user collaborative datastore.
+						The namespace for the <code>Datastore</code> class statics.</p>
+					</div>
+					<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+						<h4>Notes</h4>
+					</a>
+					<p>A store is structured in a maximally flat way using a hierarchy
+						of tables, records, and fields. Internally, the object graph is
+					synchronized among all users via CRDT algorithms.</p>
+					<p><a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type">https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type</a>
+					<a href="https://hal.inria.fr/file/index/docid/555588/filename/techreport.pdf">https://hal.inria.fr/file/index/docid/555588/filename/techreport.pdf</a></p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Datastore</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><span class="tsd-signature-type">IDisposable</span></li>
+					<li><span class="tsd-signature-type">IIterable</span><span class="tsd-signature-symbol">&lt;</span><a href="table.html" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><span class="tsd-signature-type">IMessageHandler</span></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/datastore.ichangedargs.html" class="tsd-kind-icon">IChanged<wbr>Args</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/datastore.ioptions.html" class="tsd-kind-icon">IOptions</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="datastore.html#change" class="tsd-kind-icon">Change</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="datastore.html#context" class="tsd-kind-icon">Context</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="datastore.html#datalocation" class="tsd-kind-icon">Data<wbr>Location</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#fieldlocation" class="tsd-kind-icon">Field<wbr>Location</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="datastore.html#mutablechange" class="tsd-kind-icon">Mutable<wbr>Change</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="datastore.html#mutablepatch" class="tsd-kind-icon">Mutable<wbr>Patch</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="datastore.html#patch" class="tsd-kind-icon">Patch</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#recordlocation" class="tsd-kind-icon">Record<wbr>Location</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#tablelocation" class="tsd-kind-icon">Table<wbr>Location</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="datastore.html#transaction" class="tsd-kind-icon">Transaction</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="datastore.html#transactionidfactory" class="tsd-kind-icon">Transaction<wbr>IdFactory</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="datastore.html#transactiontype" class="tsd-kind-icon">Transaction<wbr>Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-private"><a href="datastore.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_adapter" class="tsd-kind-icon">_adapter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_cemetery" class="tsd-kind-icon">_cemetery</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_changed" class="tsd-kind-icon">_changed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_context" class="tsd-kind-icon">_context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_disposed" class="tsd-kind-icon">_disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_tables" class="tsd-kind-icon">_tables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_transactionidfactory" class="tsd-kind-icon">_transaction<wbr>IdFactory</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_transactionqueue" class="tsd-kind-icon">_transaction<wbr>Queue</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="datastore.html#adapter" class="tsd-kind-icon">adapter</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="datastore.html#changed" class="tsd-kind-icon">changed</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="datastore.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="datastore.html#intransaction" class="tsd-kind-icon">in<wbr>Transaction</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="datastore.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="datastore.html#version" class="tsd-kind-icon">version</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_finalizetransaction" class="tsd-kind-icon">_finalize<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_inittransaction" class="tsd-kind-icon">_init<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_onredo" class="tsd-kind-icon">_on<wbr>Redo</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_onremotetransaction" class="tsd-kind-icon">_on<wbr>Remote<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_onundo" class="tsd-kind-icon">_on<wbr>Undo</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_processqueue" class="tsd-kind-icon">_process<wbr>Queue</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_processtransaction" class="tsd-kind-icon">_process<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="datastore.html#_queuetransaction" class="tsd-kind-icon">_queue<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="datastore.html#begintransaction" class="tsd-kind-icon">begin<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="datastore.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="datastore.html#endtransaction" class="tsd-kind-icon">end<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="datastore.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="datastore.html#iter" class="tsd-kind-icon">iter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="datastore.html#processmessage" class="tsd-kind-icon">process<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="datastore.html#redo" class="tsd-kind-icon">redo</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="datastore.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="datastore.html#undo" class="tsd-kind-icon">undo</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="datastore.html#create" class="tsd-kind-icon">create</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#getfield" class="tsd-kind-icon">get<wbr>Field</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#getrecord" class="tsd-kind-icon">get<wbr>Record</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#gettable" class="tsd-kind-icon">get<wbr>Table</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#listenfield" class="tsd-kind-icon">listen<wbr>Field</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#listenrecord" class="tsd-kind-icon">listen<wbr>Record</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#listentable" class="tsd-kind-icon">listen<wbr>Table</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#updatefield" class="tsd-kind-icon">update<wbr>Field</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#updaterecord" class="tsd-kind-icon">update<wbr>Record</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="datastore.html#updatetable" class="tsd-kind-icon">update<wbr>Table</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="datastore.html#withtransaction" class="tsd-kind-icon">with<wbr>Transaction</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="change" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Change</h3>
+					<div class="tsd-signature tsd-kind-icon">Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L636">datastore.ts:636</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type alias for a store change.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>schemaId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="table.html#change" class="tsd-signature-type">Change</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="context" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Context</h3>
+					<div class="tsd-signature tsd-kind-icon">Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Private.MutableContext</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L695">datastore.ts:695</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="datalocation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Data<wbr>Location</h3>
+					<div class="tsd-signature tsd-kind-icon">Data<wbr>Location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L744">datastore.ts:744</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A base type for describing the location of data in a datastore,
+								to be consumed by some object. The only requirement is that it
+								has a datastore object. Objects extending from this will, in general,
+							have some combination of table, record, and field locations.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="fieldlocation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Field<wbr>Location</h3>
+					<div class="tsd-signature tsd-kind-icon">Field<wbr>Location&lt;S, F&gt;<span class="tsd-signature-symbol">:</span> <a href="datastore.html#recordlocation" class="tsd-signature-type">RecordLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L778">datastore.ts:778</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An interface for referring to a specific field in a datastore.</p>
+						</div>
+						<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+							<h4>Notes</h4>
+						</a>
+						<p>The field must exist in the schema.</p>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+						</li>
+						<li>
+							<h4>F<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof S[&quot;fields&quot;]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="mutablechange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Mutable<wbr>Change</h3>
+					<div class="tsd-signature tsd-kind-icon">Mutable<wbr>Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L652">datastore.ts:652</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>schemaId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="table.html#mutablechange" class="tsd-signature-type">MutableChange</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="mutablepatch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Mutable<wbr>Patch</h3>
+					<div class="tsd-signature tsd-kind-icon">Mutable<wbr>Patch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L660">datastore.ts:660</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>schemaId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="table.html#mutablepatch" class="tsd-signature-type">MutablePatch</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="patch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Patch</h3>
+					<div class="tsd-signature tsd-kind-icon">Patch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L644">datastore.ts:644</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type alias for a store patch.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>schemaId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="table.html#patch" class="tsd-signature-type">Patch</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="recordlocation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Record<wbr>Location</h3>
+					<div class="tsd-signature tsd-kind-icon">Record<wbr>Location&lt;S&gt;<span class="tsd-signature-symbol">:</span> <a href="datastore.html#tablelocation" class="tsd-signature-type">TableLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L765">datastore.ts:765</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An interface for referring to a specific record in a datastore.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="tablelocation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Table<wbr>Location</h3>
+					<div class="tsd-signature tsd-kind-icon">Table<wbr>Location&lt;S&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L754">datastore.ts:754</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An interface for referring to a specific table in a datastore.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="transaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Transaction</h3>
+					<div class="tsd-signature tsd-kind-icon">Transaction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L668">datastore.ts:668</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An object representing a datastore transaction.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="transactionidfactory" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Transaction<wbr>IdFactory</h3>
+					<div class="tsd-signature tsd-kind-icon">Transaction<wbr>IdFactory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L701">datastore.ts:701</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A factory function for generating a unique transaction id.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, storeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>version: <span class="tsd-signature-type">number</span></h5>
+											</li>
+											<li>
+												<h5>storeId: <span class="tsd-signature-type">number</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="transactiontype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Transaction<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">Transaction<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"transaction"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"undo"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"redo"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L573">datastore.ts:573</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type alias for kinds of transactions.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Datastore<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="datastore.html#context" class="tsd-signature-type">Context</a>, tables<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BPlusTree</span><span class="tsd-signature-symbol">&lt;</span><a href="table.html" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, adapter<span class="tsd-signature-symbol">?: </span><a href="../interfaces/iserveradapter.html" class="tsd-signature-type">IServerAdapter</a>, transactionIdFactory<span class="tsd-signature-symbol">?: </span><a href="datastore.html#transactionidfactory" class="tsd-signature-type">TransactionIdFactory</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L356">datastore.ts:356</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new datastore.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <a href="datastore.html#context" class="tsd-signature-type">Context</a></h5>
+								</li>
+								<li>
+									<h5>tables: <span class="tsd-signature-type">BPlusTree</span><span class="tsd-signature-symbol">&lt;</span><a href="table.html" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The tables of the datastore.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> adapter: <a href="../interfaces/iserveradapter.html" class="tsd-signature-type">IServerAdapter</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> transactionIdFactory: <a href="datastore.html#transactionidfactory" class="tsd-signature-type">TransactionIdFactory</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="datastore.html" class="tsd-signature-type">Datastore</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_adapter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _adapter</h3>
+					<div class="tsd-signature tsd-kind-icon">_adapter<span class="tsd-signature-symbol">:</span> <a href="../interfaces/iserveradapter.html" class="tsd-signature-type">IServerAdapter</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L551">datastore.ts:551</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_cemetery" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _cemetery</h3>
+					<div class="tsd-signature tsd-kind-icon">_cemetery<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L552">datastore.ts:552</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>id: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_changed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _changed</h3>
+					<div class="tsd-signature tsd-kind-icon">_changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Signal</span><span class="tsd-signature-symbol">&lt;</span><a href="datastore.html" class="tsd-signature-type">Datastore</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/datastore.ichangedargs.html" class="tsd-signature-type">IChangedArgs</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Signal&lt;Datastore, Datastore.IChangedArgs&gt;(this)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L556">datastore.ts:556</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_context" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _context</h3>
+					<div class="tsd-signature tsd-kind-icon">_context<span class="tsd-signature-symbol">:</span> <a href="datastore.html#context" class="tsd-signature-type">Context</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L555">datastore.ts:555</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_disposed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L553">datastore.ts:553</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_tables" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tables</h3>
+					<div class="tsd-signature tsd-kind-icon">_tables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BPlusTree</span><span class="tsd-signature-symbol">&lt;</span><a href="table.html" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L554">datastore.ts:554</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_transactionidfactory" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _transaction<wbr>IdFactory</h3>
+					<div class="tsd-signature tsd-kind-icon">_transaction<wbr>IdFactory<span class="tsd-signature-symbol">:</span> <a href="datastore.html#transactionidfactory" class="tsd-signature-type">TransactionIdFactory</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L557">datastore.ts:557</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_transactionqueue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _transaction<wbr>Queue</h3>
+					<div class="tsd-signature tsd-kind-icon">_transaction<wbr>Queue<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LinkedList</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"transaction"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"undo"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"redo"</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new LinkedList&lt;[Datastore.Transaction,Datastore.TransactionType]&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L558">datastore.ts:558</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="adapter" class="tsd-anchor"></a>
+					<h3>adapter</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> adapter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/iserveradapter.html" class="tsd-signature-type">IServerAdapter</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L341">datastore.ts:341</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The handler for broadcasting transactions to peers.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/iserveradapter.html" class="tsd-signature-type">IServerAdapter</a>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">null</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="changed" class="tsd-anchor"></a>
+					<h3>changed</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> changed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ISignal</span><span class="tsd-signature-symbol">&lt;</span><a href="datastore.html" class="tsd-signature-type">Datastore</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/datastore.ichangedargs.html" class="tsd-signature-type">IChangedArgs</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L141">datastore.ts:141</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A signal emitted when changes are made to the store.</p>
+								</div>
+								<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+									<h4>Notes</h4>
+								</a>
+								<p>This signal is emitted either at the end of a local mutation,
+									or after a remote mutation has been applied. The storeId can
+								be used to determine its source.</p>
+								<p>The payload represents the set of local changes that were made
+								to bring the store to its current state.</p>
+								<a href="#complexity" id="complexity" style="color: inherit; text-decoration: none;">
+									<h4>Complexity</h4>
+								</a>
+								<p><code>O(1)</code></p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ISignal</span><span class="tsd-signature-symbol">&lt;</span><a href="datastore.html" class="tsd-signature-type">Datastore</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/datastore.ichangedargs.html" class="tsd-signature-type">IChangedArgs</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L154">datastore.ts:154</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The unique id of the store.</p>
+								</div>
+								<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+									<h4>Notes</h4>
+								</a>
+								<p>The id is unique among all other collaborating peers.</p>
+								<a href="#complexity" id="complexity" style="color: inherit; text-decoration: none;">
+									<h4>Complexity</h4>
+								</a>
+								<p><code>O(1)</code></p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="intransaction" class="tsd-anchor"></a>
+					<h3>in<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> inTransaction<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L164">datastore.ts:164</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Whether a transaction is currently in progress.</p>
+								</div>
+								<a href="#complexity" id="complexity" style="color: inherit; text-decoration: none;">
+									<h4>Complexity</h4>
+								</a>
+								<p><code>O(1)</code></p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L123">datastore.ts:123</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Whether the datastore has been disposed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="version" class="tsd-anchor"></a>
+					<h3>version</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> version<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L179">datastore.ts:179</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The current version of the datastore.</p>
+								</div>
+								<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+									<h4>Notes</h4>
+								</a>
+								<p>This version is automatically increased for each transaction
+									to the store. However, it might not increase linearly (i.e.
+								it might make jumps).</p>
+								<a href="#complexity" id="complexity" style="color: inherit; text-decoration: none;">
+									<h4>Complexity</h4>
+								</a>
+								<p><code>O(1)</code></p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_finalizetransaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _finalize<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_finalize<wbr>Transaction<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L543">datastore.ts:543</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finalize the context state for a transaction in progress.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>An exception if no transaction is in progress.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_inittransaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _init<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_init<wbr>Transaction<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, newVersion<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L526">datastore.ts:526</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reset the context state for a new transaction.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>An exception if a transaction is already in progress.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The id of the new transaction.</p>
+									</div>
+								</li>
+								<li>
+									<h5>newVersion: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The version of the datastore after the transaction.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_onredo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _on<wbr>Redo</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_on<wbr>Redo<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><a href="datastore.html#transaction" class="tsd-signature-type">Transaction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L398">datastore.ts:398</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle a redo from the server adapter.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transaction: <a href="datastore.html#transaction" class="tsd-signature-type">Transaction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_onremotetransaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _on<wbr>Remote<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_on<wbr>Remote<wbr>Transaction<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><a href="datastore.html#transaction" class="tsd-signature-type">Transaction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L384">datastore.ts:384</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle a transaction from the server adapter.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transaction: <a href="datastore.html#transaction" class="tsd-signature-type">Transaction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_onundo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _on<wbr>Undo</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_on<wbr>Undo<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><a href="datastore.html#transaction" class="tsd-signature-type">Transaction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L391">datastore.ts:391</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle an undo from the server adapter.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transaction: <a href="datastore.html#transaction" class="tsd-signature-type">Transaction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_processqueue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _process<wbr>Queue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_process<wbr>Queue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L490">datastore.ts:490</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Process all transactions currently queued.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_processtransaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _process<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_process<wbr>Transaction<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><a href="datastore.html#transaction" class="tsd-signature-type">Transaction</a>, type<span class="tsd-signature-symbol">: </span><a href="datastore.html#transactiontype" class="tsd-signature-type">TransactionType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L412">datastore.ts:412</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Apply a transaction to the datastore.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>An exception if <code>processTransaction</code> is called during a mutation.</p>
+										<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+											<h4>Notes</h4>
+										</a>
+										<p>If changes are made, the <code>changed</code> signal will be emitted.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transaction: <a href="datastore.html#transaction" class="tsd-signature-type">Transaction</a></h5>
+								</li>
+								<li>
+									<h5>type: <a href="datastore.html#transactiontype" class="tsd-signature-type">TransactionType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_queuetransaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _queue<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_queue<wbr>Transaction<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><a href="datastore.html#transaction" class="tsd-signature-type">Transaction</a>, type<span class="tsd-signature-symbol">: </span><a href="datastore.html#transactiontype" class="tsd-signature-type">TransactionType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L482">datastore.ts:482</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Queue a transaction for later application.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transaction: <a href="datastore.html#transaction" class="tsd-signature-type">Transaction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the transaction to queue.</p>
+									</div>
+								</li>
+								<li>
+									<h5>type: <a href="datastore.html#transactiontype" class="tsd-signature-type">TransactionType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="begintransaction" class="tsd-anchor"></a>
+					<h3>begin<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">begin<wbr>Transaction<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L226">datastore.ts:226</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Begin a new transaction in the store.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>An exception if a transaction is already in progress.</p>
+										<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+											<h4>Notes</h4>
+										</a>
+										<p>This will allow the state of the store to be mutated
+										thorugh the <code>update</code> method on the individual tables.</p>
+										<p>After the updates are completed, <code>endTransaction</code> should
+										be called.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The id of the new transaction</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L109">datastore.ts:109</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispose of the resources held by the datastore.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="endtransaction" class="tsd-anchor"></a>
+					<h3>end<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">end<wbr>Transaction<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L242">datastore.ts:242</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Completes a transaction.</p>
+								</div>
+								<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+									<h4>Notes</h4>
+								</a>
+								<p>This completes a transaction previously started with
+									<code>beginTransaction</code>. If a change has occurred, the
+								<code>changed</code> signal will be emitted.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">get&lt;S&gt;<span class="tsd-signature-symbol">(</span>schema<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="table.html" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L204">datastore.ts:204</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the table for a particular schema.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>An exception if no table exists for the given schema.</p>
+										<a href="#complexity" id="complexity" style="color: inherit; text-decoration: none;">
+											<h4>Complexity</h4>
+										</a>
+										<p><code>O(log32 n)</code></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>schema: <span class="tsd-signature-type">S</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The schema of interest.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="table.html" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The table for the specified schema.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="iter" class="tsd-anchor"></a>
+					<h3>iter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">iter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="table.html" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L188">datastore.ts:188</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create an iterator over all the tables of the datastore.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="table.html" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An iterator.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="processmessage" class="tsd-anchor"></a>
+					<h3>process<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">process<wbr>Message<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L270">datastore.ts:270</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle a message.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="redo" class="tsd-anchor"></a>
+					<h3>redo</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">redo<span class="tsd-signature-symbol">(</span>transactionId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L328">datastore.ts:328</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Redo a patch that was previously undone.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>An exception if <code>redo</code> is called during a mutation, or if no
+										server adapter has been set for the datastore.</p>
+										<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+											<h4>Notes</h4>
+										</a>
+										<p>If changes are made, the <code>changed</code> signal will be emitted before
+										the promise resolves.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transactionId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The transaction to redo.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A promise which resolves when the action is complete.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L350">datastore.ts:350</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Serialize the state of the datastore to a string.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The serialized state.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="undo" class="tsd-anchor"></a>
+					<h3>undo</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">undo<span class="tsd-signature-symbol">(</span>transactionId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L304">datastore.ts:304</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Undo a patch that was previously applied.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>An exception if <code>undo</code> is called during a mutation, or if no
+										server adapter has been set for the datastore.</p>
+										<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+											<h4>Notes</h4>
+										</a>
+										<p>If changes are made, the <code>changed</code> signal will be emitted before
+										the promise resolves.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transactionId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The transaction to undo.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A promise which resolves when the action is complete.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="create" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> create</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/datastore.ioptions.html" class="tsd-signature-type">IOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L74">datastore.ts:74</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new datastore.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>An exception if any of the schema definitions are invalid.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="../interfaces/datastore.ioptions.html" class="tsd-signature-type">IOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The options for creating the datastore</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="datastore.html" class="tsd-signature-type">Datastore</a></h4>
+							<p>A new datastore table.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="getfield" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Field</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Field&lt;S, F&gt;<span class="tsd-signature-symbol">(</span>datastore<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, loc<span class="tsd-signature-symbol">: </span><a href="datastore.html#fieldlocation" class="tsd-signature-type">FieldLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S[&quot;fields&quot;][F][&quot;ValueType&quot;]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L832">datastore.ts:832</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a given field by its location.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+								</li>
+								<li>
+									<h4>F<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof S[&quot;fields&quot;]</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>datastore: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+								</li>
+								<li>
+									<h5>loc: <a href="datastore.html#fieldlocation" class="tsd-signature-type">FieldLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">S[&quot;fields&quot;][F][&quot;ValueType&quot;]</span></h4>
+							<p>the field in question.</p>
+							<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+								<h4>Notes</h4>
+							</a>
+							<p>This will throw an error if the record does not exist in the given table.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="getrecord" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Record</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Record&lt;S&gt;<span class="tsd-signature-symbol">(</span>datastore<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, loc<span class="tsd-signature-symbol">: </span><a href="datastore.html#recordlocation" class="tsd-signature-type">RecordLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/record.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L813">datastore.ts:813</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a given record by its location.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>datastore: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+								</li>
+								<li>
+									<h5>loc: <a href="datastore.html#recordlocation" class="tsd-signature-type">RecordLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/record.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+							<p>the record, or undefined if it does not exist.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="gettable" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Table</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Table&lt;S&gt;<span class="tsd-signature-symbol">(</span>datastore<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, loc<span class="tsd-signature-symbol">: </span><a href="datastore.html#tablelocation" class="tsd-signature-type">TableLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="table.html" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L797">datastore.ts:797</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a given table by its location.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>datastore: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+								</li>
+								<li>
+									<h5>loc: <a href="datastore.html#tablelocation" class="tsd-signature-type">TableLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="table.html" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>the table.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="listenfield" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> listen<wbr>Field</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">listen<wbr>Field&lt;S, F&gt;<span class="tsd-signature-symbol">(</span>datastore<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, loc<span class="tsd-signature-symbol">: </span><a href="datastore.html#fieldlocation" class="tsd-signature-type">FieldLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IDisposable</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L999">datastore.ts:999</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Listen to changes in a fields in a table. Changes to other tables, other
+									records in the same table, and other fields in the same record are ignored.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+								</li>
+								<li>
+									<h4>F<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof S[&quot;fields&quot;]</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>datastore: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+								</li>
+								<li>
+									<h5>loc: <a href="datastore.html#fieldlocation" class="tsd-signature-type">FieldLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>slot: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S[&quot;fields&quot;][F][&quot;ChangeType&quot;]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>source: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+														</li>
+														<li>
+															<h5>args: <span class="tsd-signature-type">S[&quot;fields&quot;][F][&quot;ChangeType&quot;]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IDisposable</span></h4>
+							<p>an <code>IDisposable</code> that can be disposed to remove the listener.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="listenrecord" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> listen<wbr>Record</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">listen<wbr>Record&lt;S&gt;<span class="tsd-signature-symbol">(</span>datastore<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, loc<span class="tsd-signature-symbol">: </span><a href="datastore.html#recordlocation" class="tsd-signature-type">RecordLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IDisposable</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L962">datastore.ts:962</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Listen to changes in a record in a table. Changes to other tables and
+									other records in the same table are ignored.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>datastore: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+								</li>
+								<li>
+									<h5>loc: <a href="datastore.html#recordlocation" class="tsd-signature-type">RecordLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>slot: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, args<span class="tsd-signature-symbol">: </span><a href="../modules/record.html#change" class="tsd-signature-type">Change</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>source: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+														</li>
+														<li>
+															<h5>args: <a href="../modules/record.html#change" class="tsd-signature-type">Change</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IDisposable</span></h4>
+							<p>an <code>IDisposable</code> that can be disposed to remove the listener.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="listentable" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> listen<wbr>Table</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">listen<wbr>Table&lt;S&gt;<span class="tsd-signature-symbol">(</span>datastore<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, loc<span class="tsd-signature-symbol">: </span><a href="datastore.html#tablelocation" class="tsd-signature-type">TableLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IDisposable</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L928">datastore.ts:928</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Listen to changes in a table. Changes to other tables are ignored.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>datastore: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+								</li>
+								<li>
+									<h5>loc: <a href="datastore.html#tablelocation" class="tsd-signature-type">TableLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>slot: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, args<span class="tsd-signature-symbol">: </span><a href="table.html#change" class="tsd-signature-type">Change</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>source: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+														</li>
+														<li>
+															<h5>args: <a href="table.html#change" class="tsd-signature-type">Change</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IDisposable</span></h4>
+							<p>an <code>IDisposable</code> that can be disposed to remove the listener.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="updatefield" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> update<wbr>Field</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Field&lt;S, F&gt;<span class="tsd-signature-symbol">(</span>datastore<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, loc<span class="tsd-signature-symbol">: </span><a href="datastore.html#fieldlocation" class="tsd-signature-type">FieldLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S[&quot;fields&quot;][F][&quot;UpdateType&quot;]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L902">datastore.ts:902</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Update a field in a table.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+								</li>
+								<li>
+									<h4>F<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof S[&quot;fields&quot;]</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>datastore: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+								</li>
+								<li>
+									<h5>loc: <a href="datastore.html#fieldlocation" class="tsd-signature-type">FieldLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>update: <span class="tsd-signature-type">S[&quot;fields&quot;][F][&quot;UpdateType&quot;]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="updaterecord" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> update<wbr>Record</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Record&lt;S&gt;<span class="tsd-signature-symbol">(</span>datastore<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, loc<span class="tsd-signature-symbol">: </span><a href="datastore.html#recordlocation" class="tsd-signature-type">RecordLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, update<span class="tsd-signature-symbol">: </span><a href="../modules/record.html#update" class="tsd-signature-type">Update</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L878">datastore.ts:878</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Update a record in a table.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>datastore: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+								</li>
+								<li>
+									<h5>loc: <a href="datastore.html#recordlocation" class="tsd-signature-type">RecordLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>update: <a href="../modules/record.html#update" class="tsd-signature-type">Update</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="updatetable" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> update<wbr>Table</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Table&lt;S&gt;<span class="tsd-signature-symbol">(</span>datastore<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, loc<span class="tsd-signature-symbol">: </span><a href="datastore.html#tablelocation" class="tsd-signature-type">TableLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span>, update<span class="tsd-signature-symbol">: </span><a href="table.html#update" class="tsd-signature-type">Update</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L856">datastore.ts:856</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Update a table.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>S<span class="tsd-signature-symbol">: </span><a href="../globals.html#schema" class="tsd-signature-type">Schema</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>datastore: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+								</li>
+								<li>
+									<h5>loc: <a href="datastore.html#tablelocation" class="tsd-signature-type">TableLocation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>update: <a href="table.html#update" class="tsd-signature-type">Update</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="withtransaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> with<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Transaction<span class="tsd-signature-symbol">(</span>datastore<span class="tsd-signature-symbol">: </span><a href="datastore.html" class="tsd-signature-type">Datastore</a>, update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/blink1073/lumino/blob/69babebb/packages/datastore/src/datastore.ts#L720">datastore.ts:720</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A helper function to wrap an update to the datastore in calls to
+									<code>beginTransaction</code> and <code>endTransaction</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>datastore: <a href="datastore.html" class="tsd-signature-type">Datastore</a></h5>
+								</li>
+								<li>
+									<h5>update: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>id: <span class="tsd-signature-type">string</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>the transaction ID.</p>
+							<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+								<h4>Notes</h4>
+							</a>
+							<p>If the datastore is already in a transaction, this does not attempt
+								to start a new one, and returns an empty string for the transaction
+							id. This allows for transactions to be composed a bit more easily.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="datastore.html" class="tsd-kind-icon">Datastore</a>
+						<ul>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="../interfaces/datastore.ichangedargs.html" class="tsd-kind-icon">IChanged<wbr>Args</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="../interfaces/datastore.ioptions.html" class="tsd-kind-icon">IOptions</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#change" class="tsd-kind-icon">Change</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#context" class="tsd-kind-icon">Context</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#datalocation" class="tsd-kind-icon">Data<wbr>Location</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#fieldlocation" class="tsd-kind-icon">Field<wbr>Location</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#mutablechange" class="tsd-kind-icon">Mutable<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#mutablepatch" class="tsd-kind-icon">Mutable<wbr>Patch</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#patch" class="tsd-kind-icon">Patch</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#recordlocation" class="tsd-kind-icon">Record<wbr>Location</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#tablelocation" class="tsd-kind-icon">Table<wbr>Location</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#transaction" class="tsd-kind-icon">Transaction</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#transactionidfactory" class="tsd-kind-icon">Transaction<wbr>IdFactory</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#transactiontype" class="tsd-kind-icon">Transaction<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_adapter" class="tsd-kind-icon">_adapter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_cemetery" class="tsd-kind-icon">_cemetery</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_changed" class="tsd-kind-icon">_changed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_context" class="tsd-kind-icon">_context</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_disposed" class="tsd-kind-icon">_disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_tables" class="tsd-kind-icon">_tables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_transactionidfactory" class="tsd-kind-icon">_transaction<wbr>IdFactory</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_transactionqueue" class="tsd-kind-icon">_transaction<wbr>Queue</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="datastore.html#adapter" class="tsd-kind-icon">adapter</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="datastore.html#changed" class="tsd-kind-icon">changed</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="datastore.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="datastore.html#intransaction" class="tsd-kind-icon">in<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="datastore.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="datastore.html#version" class="tsd-kind-icon">version</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_finalizetransaction" class="tsd-kind-icon">_finalize<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_inittransaction" class="tsd-kind-icon">_init<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_onredo" class="tsd-kind-icon">_on<wbr>Redo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_onremotetransaction" class="tsd-kind-icon">_on<wbr>Remote<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_onundo" class="tsd-kind-icon">_on<wbr>Undo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_processqueue" class="tsd-kind-icon">_process<wbr>Queue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_processtransaction" class="tsd-kind-icon">_process<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="datastore.html#_queuetransaction" class="tsd-kind-icon">_queue<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="datastore.html#begintransaction" class="tsd-kind-icon">begin<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="datastore.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="datastore.html#endtransaction" class="tsd-kind-icon">end<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="datastore.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="datastore.html#iter" class="tsd-kind-icon">iter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="datastore.html#processmessage" class="tsd-kind-icon">process<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="datastore.html#redo" class="tsd-kind-icon">redo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="datastore.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="datastore.html#undo" class="tsd-kind-icon">undo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#create" class="tsd-kind-icon">create</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#getfield" class="tsd-kind-icon">get<wbr>Field</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#getrecord" class="tsd-kind-icon">get<wbr>Record</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#gettable" class="tsd-kind-icon">get<wbr>Table</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#listenfield" class="tsd-kind-icon">listen<wbr>Field</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#listenrecord" class="tsd-kind-icon">listen<wbr>Record</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#listentable" class="tsd-kind-icon">listen<wbr>Table</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#updatefield" class="tsd-kind-icon">update<wbr>Field</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#updaterecord" class="tsd-kind-icon">update<wbr>Record</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="datastore.html#updatetable" class="tsd-kind-icon">update<wbr>Table</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="datastore.html#withtransaction" class="tsd-kind-icon">with<wbr>Transaction</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="field.html" class="tsd-kind-icon">Field</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="listfield.html" class="tsd-kind-icon">List<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="mapfield.html" class="tsd-kind-icon">Map<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="registerfield.html" class="tsd-kind-icon">Register<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="table.html" class="tsd-kind-icon">Table</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="textfield.html" class="tsd-kind-icon">Text<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iserveradapter.html" class="tsd-kind-icon">IServer<wbr>Adapter</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#anyfield" class="tsd-kind-icon">Any<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#schema" class="tsd-kind-icon">Schema</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#createduplexid" class="tsd-kind-icon">create<wbr>Duplex<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#createtriplexid" class="tsd-kind-icon">create<wbr>Triplex<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#createtriplexids" class="tsd-kind-icon">create<wbr>Triplex<wbr>Ids</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#validateschema" class="tsd-kind-icon">validate<wbr>Schema</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
