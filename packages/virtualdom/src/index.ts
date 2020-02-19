@@ -1261,17 +1261,12 @@ namespace Private {
         continue;
       }
 
-      // If the old or new node is a text node, the other node is now
-      // known to be an element node, so create and insert a new node.
-      if (oldVNode.type === 'text' || newVNode.type === 'text') {
-        ArrayExt.insert(oldCopy, i, newVNode);
-        createDOMNode(newVNode, host, currElem);
-        continue;
-      }
-
-      // If the old XOR new node has a custom renderer,
-      // create and insert a new node.
-      if (!(oldVNode.renderer) != !(newVNode.renderer)) {
+      // If the old XOR new node is a text node or has a custom
+      // renderer, create and insert a new node.
+      if (
+        oldVNode.type === 'text' || newVNode.type === 'text' ||
+        (!(oldVNode.renderer) != !(newVNode.renderer))
+      ) {
         ArrayExt.insert(oldCopy, i, newVNode);
         createDOMNode(newVNode, host, currElem);
         continue;
