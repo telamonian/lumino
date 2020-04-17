@@ -1310,6 +1310,17 @@ namespace TabBar {
   }
 
   /**
+   *  Options for creating a tab bar renderer.
+   */
+  export
+  interface IRendererOptions {
+    /**
+     * The close icon renderer.
+     */
+    closeIcon?: VirtualElement.IRenderer;
+  }
+
+  /**
    * The default implementation of `IRenderer`.
    *
    * #### Notes
@@ -1320,7 +1331,11 @@ namespace TabBar {
     /**
      * Construct a new renderer.
      */
-    constructor() { }
+    constructor({
+      closeIcon,
+    }: IRendererOptions = {}) {
+      this.closeIcon = closeIcon;
+    }
 
     /**
      * A selector which matches the close icon node in a tab.
@@ -1394,12 +1409,13 @@ namespace TabBar {
      * @returns A virtual element representing the tab close icon.
      */
     renderCloseIcon(data: IRenderData<any>): VirtualElement {
-      return h.div({
-        className: 'lm-TabBar-tabCloseIcon'
-          /* <DEPRECATED> */
-          + ' p-TabBar-tabCloseIcon'
-          /* </DEPRECATED> */
-      });
+      let className = 'lm-TabBar-tabCloseIcon';
+      /* <DEPRECATED> */
+      className += ' p-TabBar-tabCloseIcon';
+      /* </DEPRECATED> */
+
+      // if .closeIcon is undefined, it will be ignored
+      return h.div({className}, this.closeIcon!);
     }
 
     /**
@@ -1490,6 +1506,8 @@ namespace TabBar {
       let extra = data.title.iconClass;
       return extra ? `${name} ${extra}` : name;
     }
+
+    public closeIcon: VirtualElement.IRenderer | undefined;
 
     private _tabID = 0;
     private _tabKeys = new WeakMap<Title<any>, string>();
