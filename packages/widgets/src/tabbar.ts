@@ -1295,6 +1295,11 @@ namespace TabBar {
   export
   interface IRenderer<T> {
     /**
+     * An optional custom close icon renderer.
+     */
+    closeIcon?: VirtualElement.IRenderer;
+
+    /**
      * A selector which matches the close icon node in a tab.
      */
     readonly closeIconSelector: string;
@@ -1315,7 +1320,7 @@ namespace TabBar {
   export
   interface IRendererOptions {
     /**
-     * The close icon renderer.
+     * An optional custom close icon renderer.
      */
     closeIcon?: VirtualElement.IRenderer;
   }
@@ -1507,6 +1512,9 @@ namespace TabBar {
       return extra ? `${name} ${extra}` : name;
     }
 
+    /**
+     * An optional custom close icon renderer.
+     */
     public closeIcon: VirtualElement.IRenderer | undefined;
 
     private _tabID = 0;
